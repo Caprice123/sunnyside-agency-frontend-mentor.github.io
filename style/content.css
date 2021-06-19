@@ -1,0 +1,176 @@
+
+.main > .content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+
+
+
+.main > .content > .description > .container{
+    width: 50%;
+    margin: auto;
+}
+.main > .content > .description.left-side{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.main > .content > .description.right-side{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.main > .content > .description > .container > p{
+    margin-top: 10%;
+}
+
+.main > .content > .description > .container > button{
+    position: relative;
+    border: none;
+    padding: 10px 15px;
+    background-color: transparent;
+    margin-top: 15%;
+}
+
+
+.main > .content >.description > .container > button::before{
+    content:'';
+
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    height: 5px;
+    width: 0;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: var(--yellow);
+    transition: 0.5s;
+}
+
+
+.main > .content > .description > .container > button:hover::before{
+    width: 100%;
+}
+
+
+.main > .content > .description > .container > button > a{
+    font-size: 1.25rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.main > .content > .image-left > img{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.main > .content > .image-right > img{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+
+.main > .content > .content-left{
+    width: 50%;
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-size: 100% 100%;
+    height: 50vh;
+    position: relative;
+}
+.main > .content > .content-right{
+    width: 50%;
+    background-image: url(../images/desktop/image-photography.jpg);
+    background-size: 100% 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.main > .content > .content-left > .description, .main > .content > .content-right > .description{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    width: 45%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.main > .content > .content-left > .description > p, .main > .content > .content-right > .description > p{
+    margin-top: 5%;
+}
+
+
+.main > .testimonials{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main > .testimonials > h1{
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: 5px;
+}
+
+
+.main > .testimonials > .container-testimonials{
+    /*transform: translateY(200%);*/
+    display: flex;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.main >.testimonials > .container-testimonials >.testi > img{
+    border-radius: 50%;
+}
+
+.main >.testimonials > .container-testimonials >.testi > p{
+    width: 65%;
+    margin: 2.5% auto;
+}
+
+.main >.testimonials > .container-testimonials >.testi > p:nth-child(3){
+    margin-top: 10%;
+    font-size: 1.25em;
+    font-weight: 900;
+}
+
+.main >.testimonials > .container-testimonials >.testi > p:nth-child(4){
+    font-size: 0.75em;
+    margin: 0 auto;
+    color: gray;
+}
+
+.images{
+    display: flex;
+}
+.images > .other-img {
+    display: flex;
+}
+.images > .other-img > img{
+    width: 50%;
+}

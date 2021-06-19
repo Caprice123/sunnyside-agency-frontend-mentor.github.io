@@ -1,0 +1,87 @@
+.navbar > .menu.show{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar{
+    position: relative;
+    background-image: url(../images/desktop/image-header.jpg);
+    height: 100vh;
+    text-align: center;
+    z-index: 10;
+    background-size: 100% 100%;
+}
+
+
+.navbar > .logo{
+    position: absolute;
+    left: 5%;
+    width: 15%;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar > .logo > a{
+    font-weight: 900;
+}
+
+.navbar > .menu{
+    position:absolute;
+    right: 5%;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.navbar > .menu > a{
+    font-size: 1.25rem;
+    margin: auto 1%;
+    padding: 2% 4%;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+}
+
+.navbar > i{
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    font-size: 2rem;
+    display: none;
+    z-index: 1000;
+    transform: translateY(-100%);
+}
+.active{
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    
+}
+
+.navbar > .we-are-creative{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    letter-spacing: 5px;
+    color: var(--white);
+    text-align: center;
+}
+
+.navbar > .we-are-creative > p{
+    font-size: 7.5vh;
+    font-weight: 900;
+}
+.navbar > object{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

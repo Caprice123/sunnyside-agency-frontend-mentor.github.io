@@ -1,0 +1,175 @@
+@media screen and (max-width: 700px) {
+    h1{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.75rem;
+    }
+
+    .navbar{
+        width: 100%;
+        height: 75vh;
+        background-size: 150% 100%;
+        background-position: center;
+    }
+    .navbar > .logo{
+        width: 50%;
+        height: 20%;
+    }
+
+    .navbar > .logo > a{
+        font-size: 1.5rem;
+    }
+
+
+    .navbar > .menu{
+        position: fixed;
+        height: 50vh;
+        width: 90vw;
+        top: 50%;
+        right: 5%;
+        z-index: 5;
+        display: none;
+        background-color: wheat;
+        transform: translateY(-60%);
+    }
+
+    .navbar > .we-are-creative{
+        width: 75%;
+        transform: translateX(-50%);
+    }
+
+    .navbar > .we-are-creative > p{
+        font-size: 2rem;
+    }
+    .navbar > .menu > a{
+        width: 25%;
+        color: black;
+        padding: 3% 2%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .active{
+        background-color: orange;
+    }
+    .navbar > .menu::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        transform: translateY(-90%);
+        border-bottom: 7.5vw solid wheat;
+        border-left: 7.5vw solid transparent;
+    }
+
+    .navbar > i{
+        display: flex;
+    }
+
+    .main > .content{
+        display: block;
+        position: relative;
+        height: 100vh;
+    }
+
+    .main > .content > .description.left-side, .main > .content > .description.right-side{
+        width: 100%;
+        inset: 0;
+        top: 50%;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 50%;
+    }
+    
+    .main > .content > .image-left > img, .main > .content > .image-right > img{
+        top: 0;
+        width: 100%;
+        height: 50vh;
+    }
+    .main > .content > .description > .container.left, .main > .content > .description > .container.right{
+        width: 75%;
+        height: 75%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .main > .content > .description > .container.left > p, .main > .content > .description > .container.right > p{
+        margin: 0;
+    }
+
+    .main > .content > .description > .container > button{
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+        
+    }
+
+    .main > .content > .description > .container > button > a{
+        font-size: 1rem;
+    }
+    
+    .main > .content > .content-left, .main > .content > .content-right{
+        width: 100%;
+    }
+
+    .main > .content > .content-left > .description, .main > .content > .content-right > .description{
+        width: 60%;
+    }
+
+
+    .right, .left{
+        text-align: center;
+    }
+    .main > .testimonials{
+        height: 200vh;
+        justify-content: space-evenly;
+    }
+    .main > .testimonials > .container-testimonials{
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    .main > .testimonials > .container-testimonials > div{
+        margin: 5% auto;
+    }
+    .main >.testimonials > .container-testimonials >.testi > p{
+        width: 50%;
+    }
+    .main >.testimonials > .container-testimonials >.testi > img{
+        width: 15%;
+        height: auto;
+    }
+
+    .main >.testimonials > .container-testimonials >.testi > p:nth-child(3){
+        margin-top: 5%;
+        font-size: 1em;
+        font-weight: 900;
+    }
+    .images{
+        display: block;
+    }
+
+
+    .footer > .symbol > a{
+        font-size: 2rem;
+    }
+    .footer > .extra{
+        width: 100%;
+    }
+    .footer > .extra > a{
+        font-size: 1rem;
+    }
+    .footer > .contact{
+        width: 75%;
+    }
+
+    .footer > .contact > i{
+        font-size: 2rem;
+    }
+}
